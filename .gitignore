@@ -1,0 +1,4 @@
+# All files that don't need to be seen
+*.classpath
+*.project
+**/.settings
