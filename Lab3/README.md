@@ -15,4 +15,4 @@ This program simulates rolling a pair of dice by using *Math.random* and display
 ### Replace_All.java
 
 
-This program demostrates how strings work in java by using the *replaceAll* method. Firstly with a hard-coded example, and then with the user directing tghe replacement.
+This program demonstrates how strings work in Java by using the *replaceAll* method. Firstly with a hard-coded example, and then with the user directing the replacement.
