@@ -62,5 +62,8 @@ public class Replace_All {
 		
 		//replace it and display new string
 		System.out.printf("%s\n", input1.replaceAll(input2,input3));
+		
+		//close buffer
+		scan.close();
 	}
 }

@@ -51,6 +51,7 @@ public class Bill {
 		//display; %f is how you tell printf to display doubles or floats
 		//.2 is how many places after the decimal you want to display
 		System.out.printf("Bill ~> $%.2f\nTax ~> $%.2f\nTip ~> $%.2f\nTotal ~> $%.2f\n", price, tax, tip, total);
+		scan.close();
 	}
 
 }
