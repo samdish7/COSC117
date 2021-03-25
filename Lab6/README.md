@@ -1,4 +1,4 @@
-# Lab 6, More Array Work and Output Formatting
+# Lab 6; More Array Work and Output Formatting
 
 ## Description
 
