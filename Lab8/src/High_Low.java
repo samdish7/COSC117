@@ -81,6 +81,8 @@ public class High_Low {
 	public static boolean getWinner(int f1, String s1, int f2, String s2) {
 		
 		boolean same = true;
+		String face1 = Integer.toString(f1);//this converts f1 into a usable string 
+		String face2 = Integer.toString(f2);//this converts f2 into a usable string
 		
 		//this checks to see if both players drew the same card
 		while(same) {
@@ -92,6 +94,7 @@ public class High_Low {
 					
 					//redraw for player 2
 					f2 = getFace();
+					face2 = Integer.toString(f2);
 					s2 = getSuit();
 				} else {
 					same = false;
@@ -101,9 +104,45 @@ public class High_Low {
 			}
 		}
 		
+		//rename face1 to proper facecard if needed
+		switch(f1) {
+			case 11:
+				face1 = "Jack";
+				break;
+			case 12:
+				face1 = "Queen";
+				break;
+			case 13:
+				face1 = "King";
+				break;
+			case 14:
+				face1 = "Ace";
+				break;
+			default:
+				break;
+		}
+		
+		//rename face2 to proper facecard if needed
+		switch(f2) {
+			case 11:
+				face2 = "Jack";
+				break;
+			case 12:
+				face2 = "Queen";
+				break;
+			case 13:
+				face2 = "King";
+				break;
+			case 14:
+				face2 = "Ace";
+				break;
+			default:
+				break;
+		}
+		
 		//display cards
-		System.out.printf("=================================\nPlayer 1 ~> %d of %ss\n", f1, s1);
-		System.out.printf("Player 2 ~> %d of %ss\n=================================\n", f2, s2);
+		System.out.printf("=================================\nPlayer 1 ~> %s of %ss\n", face1, s1);
+		System.out.printf("Player 2 ~> %s of %ss\n=================================\n", face2, s2);
 		/* 
 		 * once the cards are confirmed to be different, 
 		 * then compare to see who won this hand,
